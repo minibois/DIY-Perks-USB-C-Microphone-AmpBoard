@@ -1,0 +1,3 @@
+[submodule "Libraries/mini-random-library"]
+	path = Libraries/mini-random-library
+	url = https://github.com/minibois/mini-random-library
