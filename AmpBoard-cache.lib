@@ -1,0 +1,131 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Conn_01x02_Male
+#
+DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x02_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_01x03_Male
+#
+DEF Connector_Conn_01x03_Male J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Conn_01x03_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+S 34 105 0 95 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+P 2 1 1 6 50 100 34 100 N
+X Pin_1 1 200 100 150 L 50 50 1 1 P
+X Pin_2 2 200 0 150 L 50 50 1 1 P
+X Pin_3 3 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C_Small
+#
+DEF Device_C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_Small
+#
+DEF Device_R_Small R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Device_R_Small" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole_Pad
+#
+DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Regulator_Switching_NMA0515SC
+#
+DEF Regulator_Switching_NMA0515SC U 0 20 Y Y 1 F N
+F0 "U" -400 350 50 H V L CNN
+F1 "Regulator_Switching_NMA0515SC" 0 350 50 H V L CNN
+F2 "Converter_DCDC:Converter_DCDC_muRata_NMAxxxxSC_THT" 0 -350 50 H I C CIN
+F3 "" 0 0 50 H I C CNN
+ALIAS NMA0509SC NMA0505SC NMA0515SC NMA1205SC NMA1209SC NMA1212SC NMA1215SC NMA1505SC NMA1512SC NMA1515SC
+$FPLIST
+ Converter*DCDC*muRata*NMAxxxxSC*
+$ENDFPLIST
+DRAW
+S -400 300 400 -300 0 1 10 f
+P 2 0 1 10 -50 -200 -50 -250 N
+P 2 0 1 10 -50 -100 -50 -150 N
+P 2 0 1 10 -50 0 -50 -50 N
+P 2 0 1 10 -50 100 -50 50 N
+P 2 0 1 10 -50 200 -50 150 N
+P 2 0 1 10 -50 300 -50 250 N
+P 2 0 1 10 0 -300 0 -250 N
+P 2 0 1 10 0 -200 0 -150 N
+P 2 0 1 10 0 -50 0 -100 N
+P 2 0 1 10 0 0 0 50 N
+P 2 0 1 10 0 100 0 150 N
+P 2 0 1 10 0 200 0 250 N
+X VIN+ 1 -500 200 100 R 50 50 1 1 W
+X VIN- 2 -500 -200 100 R 50 50 1 1 W
+X VOUT- 4 500 -200 100 L 50 50 1 1 w
+X 0V 5 500 0 100 L 50 50 1 1 w
+X VOUT+ 6 500 200 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+#End Library
